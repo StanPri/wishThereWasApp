@@ -1,0 +1,34 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'android' ]
+2 info using npm@6.14.17
+3 info using node@v14.20.1
+4 verbose run-script [ 'preandroid', 'android', 'postandroid' ]
+5 info lifecycle WishThereWasApp@0.0.1~preandroid: WishThereWasApp@0.0.1
+6 info lifecycle WishThereWasApp@0.0.1~android: WishThereWasApp@0.0.1
+7 verbose lifecycle WishThereWasApp@0.0.1~android: unsafe-perm in lifecycle true
+8 verbose lifecycle WishThereWasApp@0.0.1~android: PATH: /usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/stanpribytkovsky/repos/WishThereWasApp/node_modules/.bin:/Users/stanpribytkovsky/.rvm/gems/ruby-2.7.7/bin:/Users/stanpribytkovsky/.rvm/gems/ruby-2.7.7@global/bin:/Users/stanpribytkovsky/.rvm/rubies/ruby-2.7.7/bin:/Users/stanpribytkovsky/opt/anaconda3/bin:/Users/stanpribytkovsky/opt/anaconda3/condabin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/stanpribytkovsky/Library/Android/sdk/emulator:/Users/stanpribytkovsky/Library/Android/sdk/tools:/Users/stanpribytkovsky/Library/Android/sdk/tools/bin:/Users/stanpribytkovsky/Library/Android/sdk/platform-tools:/Users/stanpribytkovsky/.rvm/bin
+9 verbose lifecycle WishThereWasApp@0.0.1~android: CWD: /Users/stanpribytkovsky/repos/WishThereWasApp
+10 silly lifecycle WishThereWasApp@0.0.1~android: Args: [ '-c', 'react-native run-android' ]
+11 silly lifecycle WishThereWasApp@0.0.1~android: Returned: code: 1  signal: null
+12 info lifecycle WishThereWasApp@0.0.1~android: Failed to exec android script
+13 verbose stack Error: WishThereWasApp@0.0.1 android: `react-native run-android`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+13 verbose stack     at EventEmitter.emit (events.js:400:28)
+13 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+13 verbose stack     at ChildProcess.emit (events.js:400:28)
+13 verbose stack     at maybeClose (internal/child_process.js:1088:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:296:5)
+14 verbose pkgid WishThereWasApp@0.0.1
+15 verbose cwd /Users/stanpribytkovsky/repos/WishThereWasApp
+16 verbose Darwin 22.5.0
+17 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "android"
+18 verbose node v14.20.1
+19 verbose npm  v6.14.17
+20 error code ELIFECYCLE
+21 error errno 1
+22 error WishThereWasApp@0.0.1 android: `react-native run-android`
+22 error Exit status 1
+23 error Failed at the WishThereWasApp@0.0.1 android script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]
