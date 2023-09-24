@@ -17,6 +17,10 @@ import {
   View,
 } from 'react-native';
 
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import { faMugSaucer } from '@fortawesome/free-solid-svg-icons/faMugSaucer'
+
+
 import {
   Colors,
   DebugInstructions,
