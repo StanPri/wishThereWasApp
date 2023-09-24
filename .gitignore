@@ -64,3 +64,7 @@ yarn-error.log
 
 # testing
 /coverage
+
+#continuously updating files
+_logs/
+_cacache/
