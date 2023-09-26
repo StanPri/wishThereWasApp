@@ -13,18 +13,16 @@ import {
   StatusBar,
   StyleSheet,
   Text,
-  useColorScheme,
   View,
 } from 'react-native';
 
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faMugSaucer } from '@fortawesome/free-solid-svg-icons/faMugSaucer'
+import { faLightbulb } from '@fortawesome/free-solid-svg-icons/faLightbulb'
 
 
 import {
   Colors,
   DebugInstructions,
-  Header,
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
@@ -34,7 +32,7 @@ type SectionProps = PropsWithChildren<{
 }>;
 
 function Section({children, title}: SectionProps): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+  const isDarkMode = true;
   return (
     <View style={styles.sectionContainer}>
       <Text
@@ -59,8 +57,18 @@ function Section({children, title}: SectionProps): JSX.Element {
   );
 }
 
+function Header(): JSX.Element {
+  return(
+    <View style={styles.header}>
+      <FontAwesomeIcon icon={faLightbulb} size={100} transform="rotate-30" style={styles.lightBulbLogo} />
+      <Text style={styles.headerText}>Wish There Would Be an App</Text>
+    </View>
+  )
+
+}
+
 function App(): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+  const isDarkMode = true;
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
@@ -80,18 +88,9 @@ function App(): JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
+          <Section title="Search">
           </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
+          <Section title="Category">
           </Section>
           <LearnMoreLinks />
         </View>
@@ -117,6 +116,30 @@ const styles = StyleSheet.create({
   highlight: {
     fontWeight: '700',
   },
+  header: {
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    width: '90%',
+    height: 'auto',
+    paddingLeft: 20,
+    paddingVertical: 20,
+    flexDirection: 'row'
+  },
+  lightBulbLogo: {
+    color: 'white',
+    padding: 24,
+    flex: 1
+  },
+  headerText: {
+    width: '50%',
+    justifyContent: 'center',
+    fontSize: 25,
+    fontFamily: 'sans-serif-medium',
+    fontWeight: 'bold',
+    color: 'white',
+    textAlign: 'center',
+    paddingLeft: 10
+  }
 });
 
 export default App;
